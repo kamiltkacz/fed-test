@@ -2,49 +2,60 @@
   box-sizing: border-box;
 }
 
-#q4Wrapper {
+.layout {
   background-color: #2A3035;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+
+h1,
+h3 {
   margin: 0;
 }
-#q4Wrapper h1 {
+
+.layout_title {
   font-size: 48px;
 }
-#q4Wrapper h3 {
+
+h3 {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-#q4Wrapper header, #q4Wrapper footer {
+
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.layout_header,
+footer {
   background-color: #22272B;
 }
-#q4Wrapper header {
-  padding: 20px;
-}
-#q4Wrapper footer {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-}
-#q4Wrapper article {
+
+
+article {
   text-align: center;
 }
-#q4Wrapper article img {
+
+article img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
-#q4Wrapper a {
+
+a {
   display: inline-block;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
 }
-#q4Wrapper a:hover {
+
+a:hover {
   transform: scale(1.05);
 }
-#q4Wrapper a span {
+
+a span {
   opacity: 0.5;
 }
 
@@ -52,13 +63,40 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 30px 20px;
+
 }
-.layout_header {
-  margin-bottom: 30px;
-  text-align: center;
+
+
+footer {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 5px;
 }
+
+
+
 
 /* Begin styling the report items here! */
 .reports {
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+
+}
+
+
+
+/*  MEDIA QUERIES  */
+
+
+
+@media all and (max-width: 768px) {
+
+  .reports {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 }

@@ -1,0 +1,27 @@
+Challenges and Solutions:
+
+
+1) In the main.js file, on line 9, the mustache template was missing an "+" operator between dynamically inserted HTML elements.
+
+* By using the developer console I was able to detect where the error was.
+
+2) CSS was missing and the not targeting correct elements of the index.html file.
+
+* I refactored and formatted the main.css file to make the page identical to the preview image.
+
+3) Some HTML elements were missing accesibility attributes.
+
+* I added aria-label tags to elements that were lacking text.
+
+4) Styling of .reports dynamic div
+
+* I used Flexbox for full size monitors and Grid for width of 768px and below.
+
+5) Mustache instered temples was missing 2 values - "file_size" and "file_type".
+
+* I inserted those values in the template.
+
+
+I'm available for any questions you may have.
+
+Thank you.
